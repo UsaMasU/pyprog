@@ -1,0 +1,27 @@
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+    <div class="table-responsive">
+        <table class="table table-striped table-sm">
+            <thead>
+            <tr>
+                <th>№</th>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Code</th>
+                <th>Area</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for row in rows %}
+            <tr>
+                <td>{{ forloop.counter }}</td>
+                <td>{{ row.DeviceID }}</td>
+                <td>{{ row.DeviceName }}</td>
+                <td>{{ row.DeviceCode }}</td>
+                <td>{{ row.DeviceArea }}</td>
+            </tr>
+            {% endfor %}
+
+            </tbody>
+        </table>
+    </div>
+</main>

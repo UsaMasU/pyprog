@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block nav %}
+    {% include './inc/_nav_main.html' %}
+{% endblock %}
+
+{% block content %}
+<h1>
+  {{ text }}
+  {% include './inc/_content.html' %}
+</h1>
+
+{% endblock %}
