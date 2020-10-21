@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = '3md!brl**$)37)1rfw@_86cu+u-@xmmf)%ibi&$f$8a&t2&&0='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -40,6 +40,10 @@ INSTALLED_APPS = [
     'one.apps.OneConfig',
     'mssql.apps.MssqlConfig',
     'scaner.apps.ScanerConfig',
+    'NewApp',
+    'plc.apps.PlcConfig'
+
+    #'django_ajax',
 ]
 
 MIDDLEWARE = [
@@ -50,6 +54,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    #'django_ajax.middleware.AJAXMiddleware',
+
 ]
 
 ROOT_URLCONF = 'main.urls'

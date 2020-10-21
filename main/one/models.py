@@ -9,6 +9,7 @@ class Request(models.Model):
 
 class Valve(models.Model):
     title = models.CharField(verbose_name='Valve', max_length=30)
+    description = models.CharField(verbose_name='Description', max_length=250, null=True)
     quantity = models.DecimalField(max_digits=6, decimal_places=0, verbose_name="quantity")
     request = models.ForeignKey(Request, on_delete=models.CASCADE, null=True, blank=True)
 

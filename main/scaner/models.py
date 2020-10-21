@@ -15,3 +15,5 @@ class Scan(models.Model):
     class Meta:
         verbose_name = 'Скан'
         verbose_name_plural = 'Сканы'
+
+
