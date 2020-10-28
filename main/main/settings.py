@@ -37,13 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'one.apps.OneConfig',
     'mssql.apps.MssqlConfig',
     'scaner.apps.ScanerConfig',
-    'NewApp',
     'plc.apps.PlcConfig'
-
-    #'django_ajax',
 ]
 
 MIDDLEWARE = [
@@ -54,9 +50,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-
-    #'django_ajax.middleware.AJAXMiddleware',
-
 ]
 
 ROOT_URLCONF = 'main.urls'
@@ -131,7 +124,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'mssql/static'),
-    os.path.join(BASE_DIR, 'one/static'),
+    os.path.join(BASE_DIR, 'plc/static'),
     os.path.join(BASE_DIR, 'scaner/static'),
     os.path.join(BASE_DIR, 'resources/static'),
 ]

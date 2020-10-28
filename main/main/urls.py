@@ -20,9 +20,9 @@ from django.urls import path, include
 from .views import index
 
 urlpatterns = [
-    path('', index, name = 'main'),
     path('admin/', admin.site.urls),
+    path('', index, name = 'main'),
     path('sql/', include('mssql.urls')),
     path('scaner/', include('scaner.urls')),
-    path('posts/', include('NewApp.urls'), name = 'posts'),   # To make post app available at /
+    path('plc/', include('plc.urls')),
 ]
