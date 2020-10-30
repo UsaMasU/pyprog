@@ -1,21 +1,24 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-  <a class="navbar-brand mr-auto mr-lg-0" href="#">Offcanvas navbar</a>
+  <a class="navbar-brand mr-auto mr-lg-0" href="#">Vertek</a>
   <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="% url 'main' %">Dashboard<span class="sr-only">(current)</span></a>
+      <li class="nav-item active ">
+        <a class="nav-link" href="% url 'main' %"> <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item btn btn-outline-secondary my-2 my-sm-0">
         <a class="nav-link" href="{% url 'sql_main' %}">MS SQL</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item btn btn-outline-secondary my-2 my-sm-0">
+        <a class="nav-link" href="{% url 'plc_main' %}">PLC</a>
+      </li>
+      <li class="nav-item btn btn-outline-secondary my-2 my-sm-0">
         <a class="nav-link" href="{% url 'scan_main' %}">Scaner</a>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown btn btn-outline-secondary my-2 my-sm-0">
         <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Options</a>
         <div class="dropdown-menu" aria-labelledby="dropdown01">
           <a class="dropdown-item" href="#">1</a>
